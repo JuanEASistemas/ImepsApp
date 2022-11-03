@@ -1,4 +1,6 @@
-package com.imepsapp;
+package com.ImepsApp;
+
+import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -14,7 +16,13 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "ImepsApp";
   }
+  
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(null);
+  }
 
+  
   /**
    * Returns the instance of the {@link ReactActivityDelegate}. There the RootView is created and
    * you can specify the renderer you wish to use - the new renderer (Fabric) or the old renderer

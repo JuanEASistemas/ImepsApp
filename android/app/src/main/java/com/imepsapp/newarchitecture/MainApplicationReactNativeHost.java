@@ -1,4 +1,4 @@
-package com.imepsapp.newarchitecture;
+package com.ImepsApp.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.imepsapp.BuildConfig;
-import com.imepsapp.newarchitecture.components.MainComponentsRegistry;
-import com.imepsapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.ImepsApp.BuildConfig;
+import com.ImepsApp.newarchitecture.components.MainComponentsRegistry;
+import com.ImepsApp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
