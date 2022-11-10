@@ -1,6 +1,4 @@
-import React from 'react';
 import {
-  NativeBaseProvider,
   Center,
   Box,
   VStack,
@@ -11,12 +9,13 @@ import {
   Input,
   Link,
   Button,
+  useTheme
 } from 'native-base';
 
 export const Login = () => {
-  return (
-    <NativeBaseProvider>
-      <Center w="100%">
+  const theme = useTheme();
+  return ( 
+      <Center w="100%" h="100%" bg={theme.colors.secondary[100]}>
         <Box safeArea p="2" py="8" w="90%" maxW="290">
           <Heading size="lg" fontWeight="600" color="coolGray.800">
             Welcome
@@ -48,6 +47,5 @@ export const Login = () => {
           </VStack>
         </Box>
       </Center>
-    </NativeBaseProvider>
   );
 };

@@ -1,20 +1,14 @@
-import React from 'react';
-import {NativeBaseProvider, extendTheme} from 'native-base';
+import {extendTheme} from 'native-base';
+import { Environment } from '../enviroment';
 
 export const DarkTheme = extendTheme({
   colors: {
     // Add new color
     primary: {
-      50: '#E3F2F9',
-      100: '#C5E4F3',
-      200: '#A2D4EC',
-      300: '#7AC1E4',
-      400: '#47A9DA',
-      500: '#0088CC',
-      600: '#007AB',
-      700: '#006BA1',
-      800: '#005885',
-      900: '#003F5E',
+      100:'#1f1f1f',
+    },
+    secondary: {
+      100:Environment.COLOR_CLIENT_DARK,
     },
     // Redefining only one shade, rest of the color will remain same.
     amber: {
